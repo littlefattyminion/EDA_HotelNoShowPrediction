@@ -1,0 +1,77 @@
+{
+  "db_path": "data/noshow.db",
+  "models": {
+    "hist_gradient_boost": {
+      "cv": {
+        "cv_auc_all": [
+          0.7219892373307071,
+          0.7300739954914338,
+          0.7260281497908295,
+          0.7290960865932896,
+          0.7241522127859128
+        ],
+        "cv_auc_mean": 0.7262679363984346,
+        "cv_auc_std": 0.003010832744541014,
+        "cv_folds": 5
+      },
+      "model": "hist_gradient_boost",
+      "random_state": 42,
+      "test": {
+        "classification_report": {
+          "0": {
+            "f1-score": 0.7966895218533845,
+            "precision": 0.7296669248644462,
+            "recall": 0.877270005986829,
+            "support": 15033.0
+          },
+          "1": {
+            "f1-score": 0.5405147109017681,
+            "precision": 0.6821157822191593,
+            "recall": 0.4475975127190503,
+            "support": 8845.0
+          },
+          "accuracy": 0.7181087193232264,
+          "macro avg": {
+            "f1-score": 0.6686021163775763,
+            "precision": 0.7058913535418028,
+            "recall": 0.6624337593529397,
+            "support": 23878.0
+          },
+          "weighted avg": {
+            "f1-score": 0.7017960549438005,
+            "precision": 0.7120528090801442,
+            "recall": 0.7181087193232264,
+            "support": 23878.0
+          }
+        },
+        "confusion_matrix": [
+          [
+            13188,
+            1845
+          ],
+          [
+            4886,
+            3959
+          ]
+        ],
+        "roc_auc": 0.7328336750913582
+      },
+      "test_size": 0.2,
+      "tuning": {
+        "best_params": {
+          "model__l2_regularization": 5.0,
+          "model__learning_rate": 0.01,
+          "model__max_depth": 6,
+          "model__max_iter": 300,
+          "model__min_samples_leaf": 50
+        },
+        "best_score_cv_auc": 0.7250000229880526,
+        "cv_folds": 3,
+        "n_iter": 30,
+        "search_type": "RandomizedSearchCV"
+      }
+    }
+  },
+  "rows_after_cleaning": 119390,
+  "run_timestamp": "2026-02-25T06:07:35Z"
+}
