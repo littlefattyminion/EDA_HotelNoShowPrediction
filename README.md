@@ -84,7 +84,8 @@ Three machine learning models were implemented:
 
 Performance Comparison
 
-/Users/smapgal/Documents/EDA_Assessment/Assessment_Hotel_No_Show_Prediction/EDA_HotelNoShowPrediction/data/EDA_PerformanceCompare.png
+![alt text](image.png)
+
 
 
 Model Selection Rationale
